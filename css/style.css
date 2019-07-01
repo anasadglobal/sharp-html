@@ -1,0 +1,515 @@
+@font-face {
+    font-family: 'CENTURY';
+    src: url('../fonts/CENTURY.eot');
+    src: url('../fonts/CENTURY.eot') format('embedded-opentype'),
+         url('../fonts/CENTURY.woff2') format('woff2'),
+         url('../fonts/CENTURY.woff') format('woff'),
+         url('../fonts/CENTURY.ttf') format('truetype'),
+         url('../fonts/CENTURY.svg#CENTURY') format('svg');
+}
+
+@font-face {
+    font-family: 'GOTHIC';
+    src: url('../fonts/GOTHIC.eot');
+    src: url('../fonts/GOTHIC.eot') format('embedded-opentype'),
+         url('../fonts/GOTHIC.woff2') format('woff2'),
+         url('../fonts/GOTHIC.woff') format('woff'),
+         url('../fonts/GOTHIC.ttf') format('truetype'),
+         url('../fonts/GOTHIC.svg#GOTHIC') format('svg');
+}
+
+@font-face {
+    font-family: 'GOTHICI';
+    src: url('../fonts/GOTHICI.eot');
+    src: url('../fonts/GOTHICI.eot') format('embedded-opentype'),
+         url('../fonts/GOTHICI.woff2') format('woff2'),
+         url('../fonts/GOTHICI.woff') format('woff'),
+         url('../fonts/GOTHICI.ttf') format('truetype'),
+         url('../fonts/GOTHICI.svg#GOTHICI') format('svg');
+}
+
+@font-face {
+    font-family: 'GOTHICB';
+    src: url('../fonts/GOTHICB.eot');
+    src: url('../fonts/GOTHICB.eot') format('embedded-opentype'),
+         url('../fonts/GOTHICB.woff2') format('woff2'),
+         url('../fonts/GOTHICB.woff') format('woff'),
+         url('../fonts/GOTHICB.ttf') format('truetype'),
+         url('../fonts/GOTHICB.svg#GOTHICB') format('svg');
+}
+
+
+
+
+/*
+* What follows is the result of much research on cross-browser styling.
+* Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+* Kroc Camen, and the H5BP dev community and team.
+*/
+
+/* ==========================================================================
+Base styles: opinionated defaults
+========================================================================== */
+
+html, button, input, select, textarea {color: #222;}
+img{-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-o-user-select: none;user-select: none;}
+/*
+* Remove text-shadow in selection highlight: h5bp.com/i
+* These selection rule sets have to be separate.
+* Customize the background color to match your design.
+*/
+::-moz-selection {background: #b3d4fc;text-shadow: none;}
+::selection {background: #b3d4fc;text-shadow: none;}
+/*
+* A better looking default horizontal rule
+*/
+
+hr {display: block;height: 1px;border: 0;border-top: 1px solid #ccc;margin: 1em 0;padding: 0;}
+/*
+* Remove the gap between images, videos, audio and canvas and the bottom of
+* their containers: h5bp.com/i/440
+*/
+
+audio, canvas, img, video {vertical-align: middle;}
+/*
+* Remove default fieldset styles.
+*/
+fieldset {border: 0;margin: 0;padding: 0;}
+/*
+* Allow only vertical resizing of textareas.
+*/
+textarea {resize: vertical;}
+/* ==========================================================================
+Browse Happy prompt
+========================================================================== */
+ul,ol,p{margin:0;padding:0;}
+h1,h2,h3,h4,h5{margin:0;padding:0;font-family: 'GOTHICB';}    
+ul, li{ list-style:none;}
+a{ text-decoration:none; transition: all 0.60s ease-in-out;}    
+
+
+
+body{ margin:0; padding:0;background:#fff;color: #353636; overflow-x:hidden;font-family: 'GOTHIC';opacity: 0;transition: 0.6s}
+body * {box-sizing: border-box;}
+
+
+.mainContainer{width: 100%;float: left;overflow: hidden;}
+.container{width: 1663px;margin: 0 auto}
+
+
+
+
+.top-header{width: 100%;float: left;background: #474747;text-align: right;padding: 10px 50px;}
+.top-header li{display: inline-block;color: #cbccce;padding:0 27px;text-transform: uppercase;border-left: 1px solid #cbccce}
+.top-header li:first-child{border:0;}
+.top-header li:last-child{padding-right: 0;}
+.top-header li img{padding-right: 10px;}
+.top-header li a{color: #cbccce;font-size: 12px;}
+.top-header li a:hover{color: #fff;}
+
+.main-header{width: 100%;float: left;padding: 20px 50px;}
+.main-header .logo{width: 30%;float: left;}
+.main-header .rightMenu{width: 70%;float: left;text-align: right;}
+.main-header .rightMenu li{display: inline-block;padding-right: 50px;}
+.main-header .rightMenu li:last-child{padding-right: 0px;}
+.main-header .rightMenu li a{font-size: 20px;color: #000}
+.main-header .rightMenu li a:hover{color: #ed3237}
+
+
+.bannerSection{width: 100%;float: left;position: relative;}
+.bannerSection .box img{width: 100%;}
+.bannerSection .box .banner-content{width: 50%;float: left;position: absolute;top: 100px;left: 120px;}
+.bannerSection .box .banner-content h1{margin-bottom:40px;font-size: 72px;font-weight: normal;color: #01599a;font-family: 'GOTHIC';opacity: 0;position: relative;left: -50px;}
+.bannerSection .box .banner-content h1 span{margin-bottom:40px;font-size: 72px;background-image:linear-gradient(to right, #01599a, #1eb6f7); color:rgba(0, 0, 0, 0); -webkit-background-clip:text; background-clip:text; position:relative;font-weight: normal;}
+.bannerSection .box .banner-content h1 br{display: none;}
+.bannerSection .box .banner-content p{width:auto;display:inline-block;font-size: 23px;color: #f2f0ee;background:#035fa0;margin-bottom: 10px;padding: 3px;opacity: 0;position: relative;left: -50px;}
+.bannerSection .box .banner-content .bannerButton{width: 100%;float: left;margin-top: 80px;opacity: 0;}
+.bannerSection .box .banner-content .bannerButton a{display: inline-block;background:#000;color: #fff;padding: 14px 20px;transition: 0.6s}
+.bannerSection .box .banner-content .bannerButton a:hover{background:#ed3237;transition: 0.6s}
+.bannerSection .box .banner-content .bannerButton a img{width: auto;float: right;margin-top: 3px;margin-left: 13px;}
+.bannerSection .slick-dots{bottom: 120px;}
+.bannerSection .slick-dots li button{background:#8e8e8e85;width:12px;height: 12px;}
+.bannerSection .slick-dots li.slick-active button{background:#000;}
+.bannerSection .slick-active.box .banner-content h1{left:0px;opacity: 1;transition: 0.6s;transition-delay:0.5s;}
+.bannerSection .slick-active.box .banner-content p{left:0px;opacity: 1;transition: 0.6s;transition-delay:0.8s;}
+.bannerSection .slick-active.box .banner-content .bannerButton{opacity: 1;transition: 0.6s;transition-delay:1.1s;}
+
+
+
+
+
+
+.companyReviewSection{width: 100%;float: left;/*padding: 0 44px;*/position: relative;z-index: 9;margin-top: -90px;}
+.companyReviewSection li{width: 33.33%;float: left;background:#ed3237;padding: 40px 75px;border-right: 1px solid #f77073}
+.companyReviewSection li .leftSection{width: 30%;float: left;text-align: center;}
+.companyReviewSection li .rightSection{width: 70%;float: left;font-size: 22px;color: #fff;text-align: center;}
+.companyReviewSection li .rightSection span{text-align: left;display: inline-block;}
+
+
+
+.productRangeSection{width: 100%;float: left;margin-top: 80px;}
+.productRangeSection h1{text-align: center;font-size: 48px;position: relative;color: #000;font-weight: bold;margin-bottom: 57px;}
+.productRangeSection h1:after{content:' ';width:100px;border-top: 5px solid #000;position: absolute;top: 50%;transform: translateY(-50%);margin-left: 15px;}
+.productRangeSection .productDescription{width: 100%;float: left;position: relative;cursor: pointer;overflow: hidden;}
+.productRangeSection .productDescription img{width: 100%;transition: 0.6s;}
+.productRangeSection .productDescription .productItem{width: auto;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+.productRangeSection .productDescription .productItem.topMargin{top: 60%}
+.productRangeSection .productDescription p{width: auto;position: absolute;bottom: 40px;left: 44px;z-index: 5;font-size:20px;transition: 0.6s}
+.productRangeSection .productDescription:hover p{left: 20px;transition: 0.6s;}
+.productRangeSection .productDescription .arrow{width:auto;position: absolute;right: 44px;bottom: 40px;}
+.productRangeSection .productDescription:hover .arrow{right: 20px;}
+.productRangeSection .productDescription img.productImg{transition: 5.6s;}
+.productRangeSection .productDescription:hover img.productImg{transform: scale(3.2);transition: 10.6s;}
+
+
+
+
+
+
+.videoSection{width: 100%;float: left;margin-top: 85px;}
+.videoSection .leftSection{width: 60%;float: left;position: relative;z-index: 1}
+.videoSection .leftSection img{width: 100%;}
+.videoSection .leftSection .videoIcon{position: absolute;bottom:50px;right: 50px;cursor: pointer;}
+.videoSection .leftSection .videoIcon img{width: auto;position: relative;z-index: 2;}
+.videoSection .leftSection .pulse {height: 68px;width: 68px;border-radius: 50%;background-color: #ff0000;animation: pulse 1.5s infinite;position: absolute;bottom: -1px;right: 0;z-index: 1;}
+@keyframes pulse {
+  0% {box-shadow: 0 0 rgba(255, 0, 0, 0.5);}
+  100% {box-shadow: 0 0 0 15px rgba(255, 0, 0, 0);}
+}
+.videoSection .rightSection{width: 45.4%;float: left;padding: 120px 30px 108px 160px;border: 1px solid #d3d3d3;margin-left: -90px;margin-top: 14%;}
+.videoSection .rightSection h3{font-size: 20px;position: relative;}
+.videoSection .rightSection h3:after{content:' ';width:150px;border-top: 4px solid #f4f5f5;position: absolute;top: 50%;transform: translateY(-50%);margin-left: 15px;}
+.videoSection .rightSection h1{font-size: 42px;color: #01599a;font-family: 'GOTHIC';font-weight: normal;margin-top: 20px;}
+.videoSection .rightSection h1 span{font-size: 45px;text-transform: uppercase;display: block;font-family: 'GOTHICB';}
+.videoSection .rightSection p{width:90%;font-size: 18px;color: #353636;font-weight: bold;padding-top: 20px;line-height: 30px;}
+
+
+
+
+
+
+
+
+
+
+.satisfyConsumerSection{width: 100%;float: left;margin: 80px 0;}
+.satisfyConsumerSection .sectionHeading{width: 100%;float: left;text-align: center;}
+.satisfyConsumerSection .sectionHeading h1{width:auto;display:inline-block;font-size: 48px;position: relative;color: #000;font-weight: bold;margin-bottom: 57px;}
+.satisfyConsumerSection .sectionHeading h1:after{content:' ';width:100px;border-top: 5px solid #000;position: absolute;top: 55%;transform: translateY(-50%);right: -130px;}
+.satisfyConsumerSection .sectionHeading a{font-size: 18px;color: #ed3237;position: relative;left: 150px;top: -8px;font-weight: 800}
+.satisfyConsumerSection .consumerArticle{width: 100%;float: left;background: url(../images/shadow.png)top left;text-align: center;background-repeat:repeat-x;background-position-y:80px;margin-top: 50px;}
+.satisfyConsumerSection .consumerArticle .slick-list{overflow: visible;margin: 0 -27px;}
+.satisfyConsumerSection .consumerArticle .slick-slide{margin: 0 27px;}
+.satisfyConsumerSection .consumerArticle .consumerDespreption{width: 100%;float: left;background: #fff;border-left: 12px solid #ed3237;padding:40px;box-shadow: 0px 0px 30px #ccc;}
+.satisfyConsumerSection .consumerArticle .consumerDespreption img{display: inline-block;position: relative;top: -85px;}
+.satisfyConsumerSection .consumerArticle .consumerDespreption p{font-size: 16px;color: #353636;line-height: 30px;font-weight: bold;text-align: left;height: 190px;}
+.satisfyConsumerSection .consumerArticle .consumerDespreption span{font-size: 14px;color: #01599a;margin-top: 10px;display:block;text-align: left;}
+.satisfyConsumerSection .consumerArticle .slick-next{width: 26px;height: 20px;background: url(../images/rightIcon.png)top left no-repeat;right: 45%;margin-top: 250px;}
+.satisfyConsumerSection .consumerArticle .slick-prev{width: 26px;height: 20px;background: url(../images/leftIcon.png)top left no-repeat;left: 51%;margin-top: 250px;}
+
+
+
+.aboutSharpSection{width: 100%;float: left;padding: 8px 0;position: relative;}
+.aboutSharpSection img{width: 100%;}
+.aboutSharpSection .aboutProduct{width:auto;position: absolute;right: 39%;bottom: 0px;}
+.aboutSharpSection .banner-content{width: 50%;float: left;position: absolute;top: 50%;left: 118px;transform:translateY(-50%);}
+.aboutSharpSection .banner-content h1{width:auto;display:inline-block;font-size: 48px;position: relative;color: #000;font-weight: bold;margin-bottom: 57px;}
+.aboutSharpSection .banner-content h1:after{content:' ';width:100px;border-top: 5px solid #000;position: absolute;top: 55%;transform: translateY(-50%);right: -130px;}
+.aboutSharpSection .banner-content p{width:80%;display:inline-block;font-size: 18px;line-height: 30px}
+.aboutSharpSection .banner-content .bannerButton{width: 100%;float: left;margin-top: 80px;}
+.aboutSharpSection .banner-content .bannerButton a{display: inline-block;background:#ed3237;color: #fff;padding: 14px 20px;transition: 0.6s;}
+.aboutSharpSection .banner-content .bannerButton a:hover{background:#000;transition: 0.6s;}
+.aboutSharpSection .banner-content .bannerButton a img{width: auto;float: right;margin-top: 3px;margin-left: 13px;}
+
+
+
+
+.CertificateSection{width: 100%;float: left;background: url(../images/certificate-bg.png)top left no-repeat;background-size: cover;padding:0 40px;margin-top: 90px;}
+.CertificateSection .leftSection{width: 50%;float: left;padding: 40px 85px;}
+.CertificateSection .leftSection h1{width:auto;display:inline-block;font-size: 48px;position: relative;color: #000;font-weight: bold;margin-bottom: 57px;}
+.CertificateSection .leftSection h1:after{content:' ';width:100px;border-top: 5px solid #000;position: absolute;top: 55%;transform: translateY(-50%);right: -130px;}
+.CertificateSection .leftSection .mainHeading{font-size: 45px;color: #01599a;line-height: 35px;border-left: 9px solid #ed3237;padding-left: 20px;}
+.CertificateSection .leftSection .mainHeading span{font-weight: bold;text-transform: uppercase;display: block;margin-top: 30px;}
+.CertificateSection .leftSection p{width:500px;padding: 40px 0 40px 30px;font-size: 16px;line-height: 25px;}
+.CertificateSection .leftSection .bannerButton{width: auto;float: left;margin-left: 30px;}
+.CertificateSection .leftSection .bannerButton a{display: inline-block;background:#ed3237;color: #fff;padding: 14px 20px;transition: 0.6s}
+.CertificateSection .leftSection .bannerButton a:hover{background:#000;transition: 0.6s}
+.CertificateSection .leftSection .bannerButton a img{width: auto;float: right;margin-top: 3px;margin-left: 13px;}
+.CertificateSection .rightSection{width: 50%;float: left;margin-top: -40px;}
+.CertificateSection .rightSection .slick-next{width: 26px;height: 20px;background: url(../images/rightIcon.png)top left no-repeat;right: 37%;}
+.CertificateSection .rightSection .slick-prev{width: 26px;height: 20px;background: url(../images/leftIcon.png)top left no-repeat;z-index: 999}
+.CertificateSection .rightSection .certificateItem{padding-left: 50px}
+
+
+
+
+.footerSection{width: 100%;float: left;background: #424242;padding: 80px 110px;}
+.footerSection .footerOpation{width: 20%;float: left;}
+.footerSection .footerOpation ul{width:100%;float:left;padding-left: 65px;}
+.footerSection .footerOpation li{color: #dbdbdb;padding-bottom: 18px;}
+.footerSection .footerOpation li.bold a{font-size: 22px;font-weight: bold;color: #fff;}
+.footerSection .footerOpation li:first-child a{font-size: 18px;color: #fff;font-weight: bold;}
+.footerSection .footerOpation li a{color: #dbdbdb;font-size:12px;transition: 0.6s;}
+.footerSection .footerOpation li a img{padding-right: 10px;}
+.footerSection .footerOpation li a:hover{color: #fcaaaa;transition: 0.6s;}
+
+
+
+.footerSocialStrip{width: 100%;float:left;background: #393939;padding: 30px 110px;}
+.footerSocialStrip .leftSection{width: 60%;float:left;margin-top: 7px;}
+.footerSocialStrip .leftSection ul{width: 100%;float: left;padding-left: 65px;}
+.footerSocialStrip .leftSection li{width: auto;float:left;padding: 0 40px;border-right: 1px solid #a7a7a7;}
+.footerSocialStrip .leftSection li:first-child{padding-left: 0px;}
+.footerSocialStrip .leftSection li:last-child{border:0;}
+.footerSocialStrip .leftSection li a{color: #a7a7a7;font-size:12px;}
+.footerSocialStrip .leftSection li a:hover{color: #fcaaaa;}
+.footerSocialStrip .rightSection {width: 40%;float: right;text-align: right;}
+.footerSocialStrip .rightSection li{display: inline-block;padding-left: 10px;}
+.footerSocialStrip .rightSection li a{color: #fff;font-size: 18px;font-weight: bold;}
+.footerSocialStrip .rightSection li:first-child a{padding-right: 20px;}
+
+
+
+
+
+
+
+
+
+/*global*/
+.overflowHidden{width: 100%;float: left;padding: 0;margin:0;overflow: hidden;position: relative;}
+.socialSection{width: auto;float: left;position: fixed;top: 50%;left: 0;transform: translateY(-50%);z-index: 999;background:#fff;padding: 10px;box-shadow: 0px 0px 20px #a0a0a0;transition: 0.2s}
+.socialSection:hover{padding-left: 20px;transition: 0.2s}
+.socialSection li{padding: 5px 0;}
+
+.enquerySection{width: auto;float: left;position: fixed;top: 50%;right: -48px;transform: translateY(-50%) rotate(-90deg);z-index: 999;background:#fff;padding: 10px 0;box-shadow: 0px 0px 20px #a0a0a0;cursor: pointer}
+.enquerySection span{font-weight: bold;font-size: 16px;padding: 10px 20px;background: url(../images/button-mark.png)top right no-repeat;}
+/*global*/
+
+
+
+.slider-wrapper.consumerArticle {width: 100%; position: relative;}
+.consumerArticle .slider {width: 100%;float: left;}
+.consumerArticle .slide {width: 100%;}
+.consumerArticle #slick-1 .slick-dots li {width: 40px;height: 5px;background: #ccc;}
+.consumerArticle #slick-1 .slick-dots li button {width: 40px;height: 5px;}
+.consumerArticle #slick-1 .slick-dots li.slick-active, .consumerArticle #slick-1 .slick-dots li:hover {background: #777;}
+.consumerArticle #slick-1 .slick-dots li button, .consumerArticle #slick-1 .slick-dots li button:before {color: transparent;opacity: 0;}
+/* progress bar */
+.consumerArticle .slider-progress {width: 150px; height: 3px;background: #eee;position: absolute;bottom: -65px;margin: 0 auto;left: 40%;}
+.consumerArticle .slider-progress .progress {width: 0%;height: 3px;background: #ed3237;}
+.consumerArticle .slider-progress .firstcount{position: absolute;top: -10px;left: -20px;}
+.consumerArticle .slider-progress .lastcount{position: absolute;top: -10px;right: -20px;}
+
+
+
+@media screen and (max-width: 1440px){
+    .container{width: 100%;}
+    .bannerSection .box .banner-content{top: 50px;left:100px;}
+    .bannerSection .box .banner-content .bannerButton{margin-top: 50px;}
+    .companyReviewSection{margin-top: -50px;}
+    .bannerSection .slick-dots{bottom: 80px;}
+    .satisfyConsumerSection .consumerArticle .consumerDespreption p{font-size: 14px;line-height: 25px;}
+    .satisfyConsumerSection .consumerArticle .slick-prev{left: 60%;}
+    .satisfyConsumerSection .consumerArticle .slick-next{right: 33%;}
+    .footerSection .footerOpation ul{padding-left: 0px;}
+    .footerSection .footerOpation li{padding-bottom: 18px;}
+    .footerSocialStrip .leftSection ul{padding-left: 0;}
+    .footerSocialStrip .leftSection li{padding: 0 15px;}
+    .companyReviewSection li .rightSection{padding-left: 30px;font-size: 19px;line-height: 28px;}
+}
+
+
+@media screen and (max-width: 1280px){
+    .companyReviewSection li .rightSection{font-size: 16px;line-height: 24px;}
+    .CertificateSection .leftSection .mainHeading{font-size: 38px;}
+    .CertificateSection .leftSection .mainHeading span{margin-top: 20px;}
+    .satisfyConsumerSection .consumerArticle .slick-prev{left: 60%;}
+    .satisfyConsumerSection .consumerArticle .slick-next{right: 35%;}
+}
+
+
+
+@media screen and (max-width: 1100px){
+    .companyReviewSection li{padding: 30px 20px;}
+    .bannerSection .box .banner-content{top: 20px;left: 40px;}
+    .bannerSection .box .banner-content h1 span{font-size: 40px;}
+    .bannerSection .box .banner-content h1{font-size: 40px;}
+    .productRangeSection .productDescription p{font-size: 14px;left: 20px;bottom: 20px;}
+    .productRangeSection .productDescription .arrow{width: 40px;right: 20px;bottom: 18px;}
+    .productRangeSection h1{font-size: 30px;}
+    .satisfyConsumerSection .sectionHeading h1{font-size: 30px;}
+    .satisfyConsumerSection .sectionHeading a{top: -3px;}
+    .satisfyConsumerSection .consumerArticle .consumerDespreption p {font-size: 11px;line-height: 19px;height: 120px;}
+    .satisfyConsumerSection .consumerArticle .consumerDespreption span{margin-top: 20px;}
+    .satisfyConsumerSection .consumerArticle .consumerDespreption{padding: 20px;}
+    .aboutSharpSection .banner-content p{font-size: 14px;line-height: 20px;}
+    .aboutSharpSection .banner-content .bannerButton{margin-top: 30px;}
+    .aboutSharpSection .banner-content h1{font-size: 30px;margin-bottom: 20px;}
+    .satisfyConsumerSection .consumerArticle .slick-prev{left: 62%;margin-top: 199px;}
+    .satisfyConsumerSection .consumerArticle .slick-next{right: 29%;margin-top: 199px;}
+    .companyReviewSection{padding: 0 44px;}
+    .aboutSharpSection .banner-content{left: 60px;}
+    .aboutSharpSection .aboutProduct{right: 33%;}
+    .CertificateSection .leftSection{padding: 40px 21px;}
+    .CertificateSection .leftSection p{width: 450px;}
+    .CertificateSection .rightSection img{width: 90%}
+    .footerSocialStrip .leftSection{width: 100%;}
+    .footerSocialStrip .rightSection{width: 100%;margin-top: 10px;}
+    .videoSection .leftSection{width: 100%;}
+    .videoSection .rightSection{width: 100%;margin: 0;}
+/*    .videoSection .Videoslider .consumerDespreption .leftSection{width: 100%;}
+    .videoSection .Videoslider .consumerDespreption .rightSection{width: 99.8%;margin: 0;padding: 20px;}
+    .videoSection .Videoslider .consumerDespreption .rightSection p{width: 100%;font-size: 14px;line-height: 22px;}
+    .videoSection .Videoslider .consumerDespreption .rightSection h1{font-size: 24px;}
+    .videoSection .Videoslider .consumerDespreption .rightSection h1 span{font-size: 24px;} */
+    .satisfyConsumerSection{margin-top: 100px;}
+    .CertificateSection .rightSection .slick-next{right: 0}
+}
+
+
+@media screen and (max-width: 900px){
+    .main-header .rightMenu, .top-header{display: none;}
+    .main-header{padding: 20px;}
+    .bannerSection .box .banner-content p{display: none;}
+    .bannerSection .box .banner-content h1{text-transform: uppercase;}
+    .bannerSection .box .banner-content h1 br{display: block;}
+    .bannerSection .box .banner-content{width: 80%;}
+    .bannerSection .box .banner-content .bannerButton{margin-top: 30px;}
+    .bannerSection .box .banner-content{left: 20px;}
+    .bannerSection .box .banner-content h1{margin-bottom: 0;}
+    .companyReviewSection li .leftSection{width: 100%;}
+    .companyReviewSection li .rightSection{width: 100%;}
+    .companyReviewSection li .rightSection span{text-align: center;}
+    .companyReviewSection li .rightSection{padding-left: 0}
+    .companyReviewSection li .rightSection span{margin-top: 15px;}
+    .productRangeSection .productDescription{padding: 0 5px;}
+    .productRangeSection .productDescription p{left: 40px;}
+    .productRangeSection .productDescription .arrow{right: 40px}
+    .aboutSharpSection .aboutProduct{display: none;}
+    .aboutSharpSection .banner-content{width: 100%;}
+    .aboutSharpSection .banner-content{top: 25%;}
+    .aboutSharpSection .banner-content p{font-size: 17px;line-height: 28px;}
+    .aboutSharpSection .banner-content .bannerButton{width: 85%;text-align: center;}
+    .CertificateSection .leftSection{width: 100%;position: relative;}
+    .CertificateSection .leftSection p{display: none;}
+    .CertificateSection .leftSection .bannerButton {width: 30%;float: left;margin-left: 0;position: absolute;right: -50px;bottom: 40px;}
+    .CertificateSection .leftSection .mainHeading{width: 70%;float: left;}
+    .CertificateSection .rightSection{width: 100%;margin-top: 0px;}
+    .CertificateSection .rightSection img{width: 100%;}
+    .satisfyConsumerSection .consumerArticle .slick-prev{left: 66%;}
+    .satisfyConsumerSection .consumerArticle .slick-next{right: 25%;}
+    .footerSection{padding: 40px;}
+    .footerSection .footerOpation{width: 50%;margin-bottom: 30px;height:250px;}
+    .footerSection .footerOpation.autoHeight{height: auto;}
+    .footerSection .footerOpation:last-child{width: 100%;height: auto;}
+    .footerSection .footerOpation:last-child ul li{width: 50%;float: left;}
+    .footerSection .footerOpation:last-child ul li:first-child{width: 100%;float: left;}
+    .socialSection{display: none;}
+    .enquerySection{display: none;}
+    .footerSocialStrip{padding: 30px;}
+    .footerSocialStrip .rightSection{text-align: center;}
+    .bannerSection .box .banner-content br{display: none;}
+    .productRangeSection h1{margin-bottom: 40px;}
+    .videoSection{margin-top: 65px;}
+    .productRangeSection{width:90%;margin: 40px 5% 0}
+    .videoSection{width: 90%;margin: 65px 5% 0}
+    .videoSection .rightSection{padding: 30px;}
+    .satisfyConsumerSection{width: 90%;padding: 0px 5%;}
+    .CertificateSection .leftSection h1{width:100%;font-size: 34px;font-family: 'GOTHIC';margin-bottom: 25px;}
+    .CertificateSection .leftSection h1:after{left: 200px;}
+    .CertificateSection .leftSection .mainHeading span{font-family: 'GOTHICB';margin-top: 10px;}
+    .footerSection .footerOpation li{padding-bottom: 5px;}
+    .footerSection .footerOpation li.bold a{display: inline-block;margin-top: 10px;}
+    .footerSocialStrip .leftSection li:first-child{width: 100%;text-align: center;border-right: 0;padding-bottom: 10px;}
+    .footerSocialStrip .leftSection li{display: inline-block;float: none;}
+    .footerSocialStrip .leftSection {text-align: center;}
+    .satisfyConsumerSection .consumerArticle .slick-next{right: 15%;}
+    .satisfyConsumerSection .consumerArticle .slick-prev{left: 73%;}
+}
+
+
+@media screen and (max-width: 568px){
+    .bannerSection .box .banner-content .bannerButton{margin-top: 20px;}
+    .bannerSection .box .banner-content h1, .bannerSection .box .banner-content h1 span{font-size: 30px}
+    .bannerSection .box .banner-content .bannerButton a{padding: 9px 10px;font-size: 12px;}
+    .bannerSection .box .banner-content .bannerButton a img{width: 18px;}
+    .companyReviewSection{padding: 0}
+    .companyReviewSection li{padding: 10px;}
+    .companyReviewSection li .leftSection img{width: 50%}
+    .companyReviewSection li .rightSection {font-size: 12px;line-height: 15px;}
+    .productRangeSection .productDescription .productItem{width: 60%}
+   .productRangeSection .productDescription .arrow{width: 30px;bottom: 20px;right: 20px;}
+   .productRangeSection .productDescription p{left: 20px;}
+    .productRangeSection h1{font-size: 18px;margin-bottom: 20px;}
+    .productRangeSection h1:after{width: 50px;border-top: 3px solid #000;top:60%;}
+    .videoSection .rightSection h3:after{width: 50px;}
+    .videoSection .rightSection h1{font-size: 20px;}
+    .videoSection .rightSection h1 span{font-size: 25px;}
+    .videoSection .rightSection h1 span br{display: none;}
+    .consumerArticle .slider-progress{left: 25%;bottom: -50px;}
+    .videoSection .rightSection p{font-size: 12px;line-height: 18px;padding-top: 5px;}
+    .videoSection .rightSection{padding: 20px;}
+    .satisfyConsumerSection .sectionHeading h1{font-size: 18px;margin-bottom: 40px}
+    .satisfyConsumerSection .sectionHeading h1:after{width: 50px;right: -60px;border-top: 3px solid #000;}
+    .satisfyConsumerSection .sectionHeading a{font-size: 14px;left: 70px;}
+    .CertificateSection{padding: 0 20px;margin-top: 20px;}
+    .CertificateSection .leftSection{padding: 20px 0;}
+    .CertificateSection .leftSection h1{font-size: 18px;}
+    .CertificateSection .leftSection h1:after{width: 50px;left: 110px;border-top: 3px solid #000}
+    .CertificateSection .leftSection .mainHeading{font-size: 20px;line-height: 24px;}
+    .CertificateSection .leftSection .mainHeading span{margin-top: 0}
+    .CertificateSection .leftSection .bannerButton{right: 0;bottom: 20px;}
+    .CertificateSection .leftSection .bannerButton a{padding: 10px;font-size: 12px;}
+    .CertificateSection .leftSection .bannerButton a img{width: 18px;margin-top: 1px;margin-left: 10px;}
+    .CertificateSection .leftSection .mainHeading{padding-left: 10px;}
+    .aboutSharpSection .banner-content p{font-size: 12px;line-height: 17px;}
+    .aboutSharpSection .banner-content{transform: inherit;top: 30px;left: 30px;}
+    .aboutSharpSection .banner-content h1{font-size: 18px;}
+    .aboutSharpSection .banner-content h1:after{width: 50px;right: -60px;border:3px solid #000;}
+    .aboutSharpSection .banner-content .bannerButton a{font-size: 12px;padding:10px;}
+    .aboutSharpSection .banner-content .bannerButton a img{width: 18px;margin-top:1px;}
+    .footerSection{padding: 20px;padding-top: 3 0px;}
+    .footerSection .footerOpation li:first-child a{font-size: 16px;padding-bottom: 10px;display: block;}
+    .footerSection .footerOpation li{padding-bottom: 1px;}
+    .footerSection .footerOpation{height: 220px;}
+    .footerSection .footerOpation:last-child ul li{width: 100%;}
+    .footerSocialStrip .rightSection li a{font-size: 12px;}
+    .footerSocialStrip .rightSection li:first-child a{padding-right: 0}
+    .footerSocialStrip .leftSection li{padding: 0 5px;}
+    .footerSocialStrip .leftSection{margin-top: 20px;}
+    .footerSocialStrip .leftSection li:first-child{padding-bottom: 7px;}
+
+    .videoSection .Videoslider .consumerDespreption .leftSection .videoIcon{bottom: 14px;right: 14px;}
+    .videoSection .Videoslider .consumerDespreption .leftSection .videoIcon img{width: 40px;}
+    .videoSection .Videoslider .consumerDespreption .leftSection .pulse{width:40px;height: 40px;}
+    .bannerSection .box .banner-content .bannerButton a img{width: 18px;margin-top: 2px;margin-left: 10px;}
+    .productRangeSection {margin: 20px 5% 0;}
+    .videoSection{margin-top: 20px;}
+    .satisfyConsumerSection{width: 90%;margin-top: 80px;}
+    .satisfyConsumerSection .consumerArticle .slick-slide{margin: 0 10px;}
+
+    .videoSection .Videoslider .consumerDespreption .leftSection{width: 100%;}
+    .videoSection .Videoslider .consumerDespreption .rightSection{width: 99.8%;margin: 0;padding: 20px;}
+    .videoSection .Videoslider .consumerDespreption .rightSection p{width: 100%;font-size: 14px;line-height: 22px;}
+    .videoSection .Videoslider .consumerDespreption .rightSection h1{font-size: 24px;}
+    .videoSection .Videoslider .consumerDespreption .rightSection h1 span{font-size: 24px;}
+    .bannerSection .box .banner-content h1, .bannerSection .box .banner-content h1 span{font-size: 35px;line-height: 36px;}
+    .aboutSharpSection .banner-content .bannerButton{margin-top: 10px;}
+    .aboutSharpSection .banner-content h1{margin-bottom: 6px;}
+    .CertificateSection .rightSection .certificateItem{padding-left: 0}
+    .companyReviewSection li .rightSection span br{display: none;}
+
+}
+
+@media screen and (max-width: 320px){
+    .companyReviewSection li .rightSection{font-size: 10px;}
+    .productRangeSection .productDescription .arrow{display: none;}
+    .satisfyConsumerSection .sectionHeading h1{font-size: 14px;}
+    .CertificateSection .leftSection .bannerButton a img{display: none;}        
+    .footerSection .footerOpation{height: 260px;}
+    .footerSection .footerOpation li:first-child a{font-size: 13px;}
+    .footerSocialStrip .rightSection li a{font-size: 11px;}
+    .footerSocialStrip .rightSection li{padding-left: 2px;}
+}     
+
